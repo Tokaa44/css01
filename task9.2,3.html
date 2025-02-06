@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         div{
+            padding: 20px;
+            height: 50px;
+            width: 600px;
+            margin: 30px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #eee;
+            position: relative;
+        }
+        div::after {
+            content: "1";
+            position: absolute;
+            width: 50px;
+            height: 70%;
+            color: white;
+            background-color: red;
+            left: -20px;
+            top: 15px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+        /* task3----------------------- */
+        p{
+            padding: 20px;
+            height: 50px;
+            width: 600px;
+            margin: 30px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #eee;
+            position: relative;
+        }
+        p::before{
+            content: attr(data-person);
+            padding: 7px 20px;
+            position: absolute;
+            width: 70px;
+            height: 50%;
+            background-color:  #eee;
+            left: -150px;
+            top: auto;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+        
+      
+    </style>
+</head>
+<body>
+    <div>1 Hello, Welcome To Elzero Web School</div>
+    <hr>
+    <!-- task3----------------------- -->
+     
+    <p data-person="Osama">This Is Very Very Long Comment Number One</p>
+    <p data-person="Ahmed">This Is Very Very Long Comment Number Two</p>
+    <p data-person="Sayed">This Is Very Very Long Comment Number Three</p>
+
+
+</body>
+</html>

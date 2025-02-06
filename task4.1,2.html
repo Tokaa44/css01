@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .parent .child .title{
+        color: red;
+    }
+    .parent .title {
+        color: blue;
+    }
+    p,.title{
+        color: green;
+    }
+    /* task2----------------- */
+    section div{
+        padding: 15px;
+        margin: 10px;
+        background-color: brown;
+        color: white;
+        max-width: 400px;
+        overflow: hidden;
+        max-height: 50px;
+    }
+</style>
+<body>
+    <div class="parent">
+        <div class="child">This Is Child <span class="title">Title</span></div>
+        <span class="title">Child Title</span>
+        <p>Paragraph Content</p>
+      </div>
+      <div class="title">Section Title</div>
+      <hr>
+      <!-- task2----------------- -->
+       <section>
+       <div>Lorem</div>
+       <div>Lorem ipsum dolor sit.</div>
+       <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+       <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ea ipsa praesentium odio quae. Sapiente magni nihil quae dicta vero. Aperiam hic praesentium eaque cumque autem veritatis nulla deserunt rem!</div>
+    </section>
+</body>
+</html>
